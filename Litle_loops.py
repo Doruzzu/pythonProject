@@ -16,4 +16,3 @@ for i in range(1, 10):
     s = first_s + "*" + '8' + "+"+ str(j)
     p = int(first_s) * 8 + int(j)
     print(s + "="+str(p))
-
