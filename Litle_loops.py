@@ -13,6 +13,7 @@ for i in range(1, 10):
     first_s = ''
     for j in range(1, i + 1):
         first_s = first_s + str(j)
-    s = first_s + "*" + '8' + "+"+ str(j)
+    s = first_s + "*" + '8' + "+" + str(j)
     p = int(first_s) * 8 + int(j)
-    print(s + "="+str(p))
+    print(s + "=" + str(p))
+
