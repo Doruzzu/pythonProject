@@ -26,3 +26,4 @@ while abs(update_bal) > 0.0001:
         x = (low + high) / 2.0
 
 print('Lowest Payment is:', round(x, 2))
+
