@@ -1,0 +1,323 @@
+<forEach name="row" values="values('IFRS-nGAAP_0006;r091','IFRS-nGAAP_0007;r092','IFRS-nGAAP_0008;r093','IFRS-nGAAP_0009;r094','IFRS-nGAAP_0010;r095','IFRS-nGAAP_0015;r110','IFRS-nGAAP_0020;r171','IFRS-nGAAP_0021;r172','IFRS-nGAAP_0022;r173','IFRS-nGAAP_0023;r174','IFRS-nGAAP_0024;r175','IFRS-nGAAP_0025;r176','IFRS-nGAAP_0026;r177','IFRS-nGAAP_0027;r178','IFRS-nGAAP_0031;r231','IFRS-nGAAP_0032;r232','IFRS-nGAAP_0033;r233','IFRS-nGAAP_0034;r234','IFRS-nGAAP_0035;r235','IFRS-nGAAP_0036;r236','IFRS-nGAAP_0037;r237','IFRS-nGAAP_0039;r375','IFRS-nGAAP_0040;r390','IFRS-nGAAP_0040;r390')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_1.ft_1_1![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0047;r061','IFRS-nGAAP_0048;r062','IFRS-nGAAP_0049;r063','IFRS-nGAAP_0050;r064','IFRS-nGAAP_0051;r065','IFRS-nGAAP_0052;r066','IFRS-nGAAP_0057;r141','IFRS-nGAAP_0058;r142','IFRS-nGAAP_0059;r143','IFRS-nGAAP_0060;r144','IFRS-nGAAP_0061;r175','IFRS-nGAAP_0064;r295','IFRS-nGAAP_0064;r295')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_1.ft_1_2![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0072;r201','IFRS-nGAAP_0073;r202','IFRS-nGAAP_0074;r203','IFRS-nGAAP_0075;r204','IFRS-nGAAP_0076;r205','IFRS-nGAAP_0077;r206','IFRS-nGAAP_0078;r207','IFRS-nGAAP_0079;r208','IFRS-nGAAP_0080;r209','IFRS-nGAAP_0081;r215','IFRS-nGAAP_0082;r235','IFRS-nGAAP_0082;r235')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_1.ft_1_3![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0109;r285','IFRS-nGAAP_0111;r295','IFRS-nGAAP_0112;r320','IFRS-nGAAP_0113;r415','IFRS-nGAAP_0117;r455','IFRS-nGAAP_0121;r632','IFRS-nGAAP_0122;r633','IFRS-nGAAP_0123;r634','IFRS-nGAAP_0123;r634')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_2![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0227;r010','IFRS-nGAAP_0229;r020','IFRS-nGAAP_0231;r030','IFRS-nGAAP_0233;r040','IFRS-nGAAP_0235;r050','IFRS-nGAAP_0235;r050')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_4.ft_4_2_2![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0228;r010','IFRS-nGAAP_0230;r020','IFRS-nGAAP_0232;r030','IFRS-nGAAP_0234;r040','IFRS-nGAAP_0236;r050','IFRS-nGAAP_0236;r050')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_4.ft_4_2_2![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0813;r010','IFRS-nGAAP_0817;r020','IFRS-nGAAP_0821;r030','IFRS-nGAAP_0825;r040','IFRS-nGAAP_0829;r050','IFRS-nGAAP_0833;r060','IFRS-nGAAP_0837;r070','IFRS-nGAAP_0841;r080','IFRS-nGAAP_0845;r090','IFRS-nGAAP_0849;r100','IFRS-nGAAP_0853;r110','IFRS-nGAAP_0857;r120','IFRS-nGAAP_0861;r130','IFRS-nGAAP_0865;r140','IFRS-nGAAP_0869;r150','IFRS-nGAAP_0873;r160','IFRS-nGAAP_0877;r170','IFRS-nGAAP_0881;r180','IFRS-nGAAP_0885;r190','IFRS-nGAAP_0889;r200','IFRS-nGAAP_0893;r210','IFRS-nGAAP_0897;r220','IFRS-nGAAP_0901;r230','IFRS-nGAAP_0905;r240','IFRS-nGAAP_0909;r250','IFRS-nGAAP_0913;r260','IFRS-nGAAP_0917;r270','IFRS-nGAAP_0921;r280','IFRS-nGAAP_0925;r290','IFRS-nGAAP_0929;r300','IFRS-nGAAP_0933;r310','IFRS-nGAAP_0937;r320','IFRS-nGAAP_0941;r330','IFRS-nGAAP_0945;r340','IFRS-nGAAP_0949;r350','IFRS-nGAAP_0953;r360','IFRS-nGAAP_0957;r370','IFRS-nGAAP_0961;r380','IFRS-nGAAP_0965;r390','IFRS-nGAAP_0969;r400','IFRS-nGAAP_0973;r410','IFRS-nGAAP_0977;r420','IFRS-nGAAP_0982;r430','IFRS-nGAAP_0987;r440','IFRS-nGAAP_0992;r450','IFRS-nGAAP_0992;r450')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_8.ft_8_1![$substr(row,(IndexOf(row,';')+2),10)$,c034] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0814;r010','IFRS-nGAAP_0818;r020','IFRS-nGAAP_0822;r030','IFRS-nGAAP_0826;r040','IFRS-nGAAP_0830;r050','IFRS-nGAAP_0834;r060','IFRS-nGAAP_0838;r070','IFRS-nGAAP_0842;r080','IFRS-nGAAP_0846;r090','IFRS-nGAAP_0850;r100','IFRS-nGAAP_0854;r110','IFRS-nGAAP_0858;r120','IFRS-nGAAP_0862;r130','IFRS-nGAAP_0866;r140','IFRS-nGAAP_0870;r150','IFRS-nGAAP_0874;r160','IFRS-nGAAP_0878;r170','IFRS-nGAAP_0882;r180','IFRS-nGAAP_0886;r190','IFRS-nGAAP_0890;r200','IFRS-nGAAP_0894;r210','IFRS-nGAAP_0898;r220','IFRS-nGAAP_0902;r230','IFRS-nGAAP_0906;r240','IFRS-nGAAP_0910;r250','IFRS-nGAAP_0914;r260','IFRS-nGAAP_0918;r270','IFRS-nGAAP_0922;r280','IFRS-nGAAP_0926;r290','IFRS-nGAAP_0930;r300','IFRS-nGAAP_0934;r310','IFRS-nGAAP_0938;r320','IFRS-nGAAP_0942;r330','IFRS-nGAAP_0946;r340','IFRS-nGAAP_0950;r350','IFRS-nGAAP_0954;r360','IFRS-nGAAP_0958;r370','IFRS-nGAAP_0962;r380','IFRS-nGAAP_0966;r390','IFRS-nGAAP_0970;r400','IFRS-nGAAP_0974;r410','IFRS-nGAAP_0978;r420','IFRS-nGAAP_0983;r430','IFRS-nGAAP_0988;r440','IFRS-nGAAP_0993;r450','IFRS-nGAAP_0993;r450')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_8.ft_8_1![$substr(row,(IndexOf(row,';')+2),10)$,c035] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_0996;r010','IFRS-nGAAP_0998;r020','IFRS-nGAAP_1000;r030','IFRS-nGAAP_1000;r030')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_8.ft_8_2![$substr(row,(IndexOf(row,';')+2),10)$,c030] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1001;r010','IFRS-nGAAP_1003;r021','IFRS-nGAAP_1005;r030','IFRS-nGAAP_1007;r040','IFRS-nGAAP_1009;r050','IFRS-nGAAP_1011;r060','IFRS-nGAAP_1013;r070','IFRS-nGAAP_1015;r080','IFRS-nGAAP_1017;r090','IFRS-nGAAP_1019;r101','IFRS-nGAAP_1021;r110','IFRS-nGAAP_1023;r120','IFRS-nGAAP_1025;r130','IFRS-nGAAP_1027;r140','IFRS-nGAAP_1029;r150','IFRS-nGAAP_1031;r160','IFRS-nGAAP_1033;r170','IFRS-nGAAP_1035;r181','IFRS-nGAAP_1037;r190','IFRS-nGAAP_1039;r200','IFRS-nGAAP_1041;r210','IFRS-nGAAP_1043;r220','IFRS-nGAAP_1045;r230','IFRS-nGAAP_1047;r240','IFRS-nGAAP_1047;r240')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_9.ft_9_1![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1002;r010','IFRS-nGAAP_1004;r021','IFRS-nGAAP_1006;r030','IFRS-nGAAP_1008;r040','IFRS-nGAAP_1010;r050','IFRS-nGAAP_1012;r060','IFRS-nGAAP_1014;r070','IFRS-nGAAP_1016;r080','IFRS-nGAAP_1018;r090','IFRS-nGAAP_1020;r101','IFRS-nGAAP_1022;r110','IFRS-nGAAP_1024;r120','IFRS-nGAAP_1026;r130','IFRS-nGAAP_1028;r140','IFRS-nGAAP_1030;r150','IFRS-nGAAP_1032;r160','IFRS-nGAAP_1034;r170','IFRS-nGAAP_1036;r181','IFRS-nGAAP_1038;r190','IFRS-nGAAP_1040;r200','IFRS-nGAAP_1042;r210','IFRS-nGAAP_1044;r220','IFRS-nGAAP_1046;r230','IFRS-nGAAP_1048;r240','IFRS-nGAAP_1048;r240')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_9.ft_9_1![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1289;r010','IFRS-nGAAP_1293;r020','IFRS-nGAAP_1297;r030','IFRS-nGAAP_1301;r040','IFRS-nGAAP_1305;r050','IFRS-nGAAP_1309;r060','IFRS-nGAAP_1313;r070','IFRS-nGAAP_1317;r080','IFRS-nGAAP_1321;r090','IFRS-nGAAP_1325;r100','IFRS-nGAAP_1329;r110','IFRS-nGAAP_1333;r120','IFRS-nGAAP_1337;r130','IFRS-nGAAP_1341;r140','IFRS-nGAAP_1345;r150','IFRS-nGAAP_1349;r160','IFRS-nGAAP_1353;r170','IFRS-nGAAP_1357;r180','IFRS-nGAAP_1361;r190','IFRS-nGAAP_1365;r195','IFRS-nGAAP_1369;r201','IFRS-nGAAP_1373;r210','IFRS-nGAAP_1377;r220','IFRS-nGAAP_1381;r230','IFRS-nGAAP_1385;r240','IFRS-nGAAP_1389;r250','IFRS-nGAAP_1393;r260','IFRS-nGAAP_1397;r270','IFRS-nGAAP_1401;r280','IFRS-nGAAP_1405;r290','IFRS-nGAAP_1409;r300','IFRS-nGAAP_1413;r310','IFRS-nGAAP_1417;r320','IFRS-nGAAP_1417;r320')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_10![$substr(row,(IndexOf(row,';')+2),10)$,c011] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1290;r010','IFRS-nGAAP_1294;r020','IFRS-nGAAP_1298;r030','IFRS-nGAAP_1302;r040','IFRS-nGAAP_1306;r050','IFRS-nGAAP_1310;r060','IFRS-nGAAP_1314;r070','IFRS-nGAAP_1318;r080','IFRS-nGAAP_1322;r090','IFRS-nGAAP_1326;r100','IFRS-nGAAP_1330;r110','IFRS-nGAAP_1334;r120','IFRS-nGAAP_1338;r130','IFRS-nGAAP_1342;r140','IFRS-nGAAP_1346;r150','IFRS-nGAAP_1350;r160','IFRS-nGAAP_1354;r170','IFRS-nGAAP_1358;r180','IFRS-nGAAP_1362;r190','IFRS-nGAAP_1366;r195','IFRS-nGAAP_1370;r201','IFRS-nGAAP_1374;r210','IFRS-nGAAP_1378;r220','IFRS-nGAAP_1382;r230','IFRS-nGAAP_1386;r240','IFRS-nGAAP_1390;r250','IFRS-nGAAP_1394;r260','IFRS-nGAAP_1398;r270','IFRS-nGAAP_1402;r280','IFRS-nGAAP_1406;r290','IFRS-nGAAP_1410;r300','IFRS-nGAAP_1414;r310','IFRS-nGAAP_1418;r320','IFRS-nGAAP_1418;r320')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_10![$substr(row,(IndexOf(row,';')+2),10)$,c016] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1291;r010','IFRS-nGAAP_1295;r020','IFRS-nGAAP_1299;r030','IFRS-nGAAP_1303;r040','IFRS-nGAAP_1307;r050','IFRS-nGAAP_1311;r060','IFRS-nGAAP_1315;r070','IFRS-nGAAP_1319;r080','IFRS-nGAAP_1323;r090','IFRS-nGAAP_1327;r100','IFRS-nGAAP_1331;r110','IFRS-nGAAP_1335;r120','IFRS-nGAAP_1339;r130','IFRS-nGAAP_1343;r140','IFRS-nGAAP_1347;r150','IFRS-nGAAP_1351;r160','IFRS-nGAAP_1355;r170','IFRS-nGAAP_1359;r180','IFRS-nGAAP_1363;r190','IFRS-nGAAP_1367;r195','IFRS-nGAAP_1371;r201','IFRS-nGAAP_1375;r210','IFRS-nGAAP_1379;r220','IFRS-nGAAP_1383;r230','IFRS-nGAAP_1387;r240','IFRS-nGAAP_1391;r250','IFRS-nGAAP_1395;r260','IFRS-nGAAP_1399;r270','IFRS-nGAAP_1403;r280','IFRS-nGAAP_1407;r290','IFRS-nGAAP_1411;r300','IFRS-nGAAP_1415;r310','IFRS-nGAAP_1419;r320','IFRS-nGAAP_1419;r320')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_10![$substr(row,(IndexOf(row,';')+2),10)$,c022] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1292;r010','IFRS-nGAAP_1296;r020','IFRS-nGAAP_1300;r030','IFRS-nGAAP_1304;r040','IFRS-nGAAP_1308;r050','IFRS-nGAAP_1312;r060','IFRS-nGAAP_1316;r070','IFRS-nGAAP_1320;r080','IFRS-nGAAP_1324;r090','IFRS-nGAAP_1328;r100','IFRS-nGAAP_1332;r110','IFRS-nGAAP_1336;r120','IFRS-nGAAP_1340;r130','IFRS-nGAAP_1344;r140','IFRS-nGAAP_1348;r150','IFRS-nGAAP_1352;r160','IFRS-nGAAP_1356;r170','IFRS-nGAAP_1360;r180','IFRS-nGAAP_1364;r190','IFRS-nGAAP_1368;r195','IFRS-nGAAP_1372;r201','IFRS-nGAAP_1376;r210','IFRS-nGAAP_1380;r220','IFRS-nGAAP_1384;r230','IFRS-nGAAP_1388;r240','IFRS-nGAAP_1392;r250','IFRS-nGAAP_1396;r260','IFRS-nGAAP_1400;r270','IFRS-nGAAP_1404;r280','IFRS-nGAAP_1408;r290','IFRS-nGAAP_1412;r300','IFRS-nGAAP_1416;r310','IFRS-nGAAP_1420;r320','IFRS-nGAAP_1420;r320')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_10![$substr(row,(IndexOf(row,';')+2),10)$,c025] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1762;r010','IFRS-nGAAP_1772;r330','IFRS-nGAAP_1782;r340','IFRS-nGAAP_1792;r350','IFRS-nGAAP_1802;r360','IFRS-nGAAP_1812;r370','IFRS-nGAAP_1822;r380','IFRS-nGAAP_1832;r390','IFRS-nGAAP_1842;r400','IFRS-nGAAP_1852;r410','IFRS-nGAAP_1862;r420','IFRS-nGAAP_1872;r430','IFRS-nGAAP_1882;r440','IFRS-nGAAP_1892;r450','IFRS-nGAAP_1902;r460','IFRS-nGAAP_1912;r470','IFRS-nGAAP_1922;r480','IFRS-nGAAP_1932;r490','IFRS-nGAAP_1942;r500','IFRS-nGAAP_1952;r510','IFRS-nGAAP_1962;r520','IFRS-nGAAP_1972;r530','IFRS-nGAAP_1972;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1763;r010','IFRS-nGAAP_1773;r330','IFRS-nGAAP_1783;r340','IFRS-nGAAP_1793;r350','IFRS-nGAAP_1803;r360','IFRS-nGAAP_1813;r370','IFRS-nGAAP_1823;r380','IFRS-nGAAP_1833;r390','IFRS-nGAAP_1843;r400','IFRS-nGAAP_1853;r410','IFRS-nGAAP_1863;r420','IFRS-nGAAP_1873;r430','IFRS-nGAAP_1883;r440','IFRS-nGAAP_1893;r450','IFRS-nGAAP_1903;r460','IFRS-nGAAP_1913;r470','IFRS-nGAAP_1923;r480','IFRS-nGAAP_1933;r490','IFRS-nGAAP_1943;r500','IFRS-nGAAP_1953;r510','IFRS-nGAAP_1963;r520','IFRS-nGAAP_1973;r530','IFRS-nGAAP_1973;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1764;r010','IFRS-nGAAP_1774;r330','IFRS-nGAAP_1784;r340','IFRS-nGAAP_1794;r350','IFRS-nGAAP_1804;r360','IFRS-nGAAP_1814;r370','IFRS-nGAAP_1824;r380','IFRS-nGAAP_1834;r390','IFRS-nGAAP_1844;r400','IFRS-nGAAP_1854;r410','IFRS-nGAAP_1864;r420','IFRS-nGAAP_1874;r430','IFRS-nGAAP_1884;r440','IFRS-nGAAP_1894;r450','IFRS-nGAAP_1904;r460','IFRS-nGAAP_1914;r470','IFRS-nGAAP_1924;r480','IFRS-nGAAP_1934;r490','IFRS-nGAAP_1944;r500','IFRS-nGAAP_1954;r510','IFRS-nGAAP_1964;r520','IFRS-nGAAP_1974;r530','IFRS-nGAAP_1974;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c030] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1765;r010','IFRS-nGAAP_1775;r330','IFRS-nGAAP_1785;r340','IFRS-nGAAP_1795;r350','IFRS-nGAAP_1805;r360','IFRS-nGAAP_1815;r370','IFRS-nGAAP_1825;r380','IFRS-nGAAP_1835;r390','IFRS-nGAAP_1845;r400','IFRS-nGAAP_1855;r410','IFRS-nGAAP_1865;r420','IFRS-nGAAP_1875;r430','IFRS-nGAAP_1885;r440','IFRS-nGAAP_1895;r450','IFRS-nGAAP_1905;r460','IFRS-nGAAP_1915;r470','IFRS-nGAAP_1925;r480','IFRS-nGAAP_1935;r490','IFRS-nGAAP_1945;r500','IFRS-nGAAP_1955;r510','IFRS-nGAAP_1965;r520','IFRS-nGAAP_1975;r530','IFRS-nGAAP_1975;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c040] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1766;r010','IFRS-nGAAP_1776;r330','IFRS-nGAAP_1786;r340','IFRS-nGAAP_1796;r350','IFRS-nGAAP_1806;r360','IFRS-nGAAP_1816;r370','IFRS-nGAAP_1826;r380','IFRS-nGAAP_1836;r390','IFRS-nGAAP_1846;r400','IFRS-nGAAP_1856;r410','IFRS-nGAAP_1866;r420','IFRS-nGAAP_1876;r430','IFRS-nGAAP_1886;r440','IFRS-nGAAP_1896;r450','IFRS-nGAAP_1906;r460','IFRS-nGAAP_1916;r470','IFRS-nGAAP_1926;r480','IFRS-nGAAP_1936;r490','IFRS-nGAAP_1946;r500','IFRS-nGAAP_1956;r510','IFRS-nGAAP_1966;r520','IFRS-nGAAP_1976;r530','IFRS-nGAAP_1976;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c050] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1767;r010','IFRS-nGAAP_1777;r330','IFRS-nGAAP_1787;r340','IFRS-nGAAP_1797;r350','IFRS-nGAAP_1807;r360','IFRS-nGAAP_1817;r370','IFRS-nGAAP_1827;r380','IFRS-nGAAP_1837;r390','IFRS-nGAAP_1847;r400','IFRS-nGAAP_1857;r410','IFRS-nGAAP_1867;r420','IFRS-nGAAP_1877;r430','IFRS-nGAAP_1887;r440','IFRS-nGAAP_1897;r450','IFRS-nGAAP_1907;r460','IFRS-nGAAP_1917;r470','IFRS-nGAAP_1927;r480','IFRS-nGAAP_1937;r490','IFRS-nGAAP_1947;r500','IFRS-nGAAP_1957;r510','IFRS-nGAAP_1967;r520','IFRS-nGAAP_1977;r530','IFRS-nGAAP_1977;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c060] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1768;r010','IFRS-nGAAP_1778;r330','IFRS-nGAAP_1788;r340','IFRS-nGAAP_1798;r350','IFRS-nGAAP_1808;r360','IFRS-nGAAP_1818;r370','IFRS-nGAAP_1828;r380','IFRS-nGAAP_1838;r390','IFRS-nGAAP_1848;r400','IFRS-nGAAP_1858;r410','IFRS-nGAAP_1868;r420','IFRS-nGAAP_1878;r430','IFRS-nGAAP_1888;r440','IFRS-nGAAP_1898;r450','IFRS-nGAAP_1908;r460','IFRS-nGAAP_1918;r470','IFRS-nGAAP_1928;r480','IFRS-nGAAP_1938;r490','IFRS-nGAAP_1948;r500','IFRS-nGAAP_1958;r510','IFRS-nGAAP_1968;r520','IFRS-nGAAP_1978;r530','IFRS-nGAAP_1978;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c070] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1769;r010','IFRS-nGAAP_1779;r330','IFRS-nGAAP_1789;r340','IFRS-nGAAP_1799;r350','IFRS-nGAAP_1809;r360','IFRS-nGAAP_1819;r370','IFRS-nGAAP_1829;r380','IFRS-nGAAP_1839;r390','IFRS-nGAAP_1849;r400','IFRS-nGAAP_1859;r410','IFRS-nGAAP_1869;r420','IFRS-nGAAP_1879;r430','IFRS-nGAAP_1889;r440','IFRS-nGAAP_1899;r450','IFRS-nGAAP_1909;r460','IFRS-nGAAP_1919;r470','IFRS-nGAAP_1929;r480','IFRS-nGAAP_1939;r490','IFRS-nGAAP_1949;r500','IFRS-nGAAP_1959;r510','IFRS-nGAAP_1969;r520','IFRS-nGAAP_1979;r530','IFRS-nGAAP_1979;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c080] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1770;r010','IFRS-nGAAP_1780;r330','IFRS-nGAAP_1790;r340','IFRS-nGAAP_1800;r350','IFRS-nGAAP_1810;r360','IFRS-nGAAP_1820;r370','IFRS-nGAAP_1830;r380','IFRS-nGAAP_1840;r390','IFRS-nGAAP_1850;r400','IFRS-nGAAP_1860;r410','IFRS-nGAAP_1870;r420','IFRS-nGAAP_1880;r430','IFRS-nGAAP_1890;r440','IFRS-nGAAP_1900;r450','IFRS-nGAAP_1910;r460','IFRS-nGAAP_1920;r470','IFRS-nGAAP_1930;r480','IFRS-nGAAP_1940;r490','IFRS-nGAAP_1950;r500','IFRS-nGAAP_1960;r510','IFRS-nGAAP_1970;r520','IFRS-nGAAP_1980;r530','IFRS-nGAAP_1980;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c090] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_1771;r010','IFRS-nGAAP_1781;r330','IFRS-nGAAP_1791;r340','IFRS-nGAAP_1801;r350','IFRS-nGAAP_1811;r360','IFRS-nGAAP_1821;r370','IFRS-nGAAP_1831;r380','IFRS-nGAAP_1841;r390','IFRS-nGAAP_1851;r400','IFRS-nGAAP_1861;r410','IFRS-nGAAP_1871;r420','IFRS-nGAAP_1881;r430','IFRS-nGAAP_1891;r440','IFRS-nGAAP_1901;r450','IFRS-nGAAP_1911;r460','IFRS-nGAAP_1921;r470','IFRS-nGAAP_1931;r480','IFRS-nGAAP_1941;r490','IFRS-nGAAP_1951;r500','IFRS-nGAAP_1961;r510','IFRS-nGAAP_1971;r520','IFRS-nGAAP_1981;r530','IFRS-nGAAP_1981;r530')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_12.ft_12_0![$substr(row,(IndexOf(row,';')+2),10)$,c100] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2717;r051','IFRS-nGAAP_2725;r052','IFRS-nGAAP_2733;r053','IFRS-nGAAP_2741;r054','IFRS-nGAAP_2749;r055','IFRS-nGAAP_2789;r070','IFRS-nGAAP_2829;r121','IFRS-nGAAP_2837;r122','IFRS-nGAAP_2845;r123','IFRS-nGAAP_2853;r124','IFRS-nGAAP_2861;r125','IFRS-nGAAP_2869;r126','IFRS-nGAAP_2877;r127','IFRS-nGAAP_2885;r128','IFRS-nGAAP_2941;r201','IFRS-nGAAP_2949;r202','IFRS-nGAAP_2957;r203','IFRS-nGAAP_2965;r204','IFRS-nGAAP_2973;r205','IFRS-nGAAP_2981;r206','IFRS-nGAAP_2981;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2718;r051','IFRS-nGAAP_2726;r052','IFRS-nGAAP_2734;r053','IFRS-nGAAP_2742;r054','IFRS-nGAAP_2750;r055','IFRS-nGAAP_2790;r070','IFRS-nGAAP_2830;r121','IFRS-nGAAP_2838;r122','IFRS-nGAAP_2846;r123','IFRS-nGAAP_2854;r124','IFRS-nGAAP_2862;r125','IFRS-nGAAP_2870;r126','IFRS-nGAAP_2878;r127','IFRS-nGAAP_2886;r128','IFRS-nGAAP_2942;r201','IFRS-nGAAP_2950;r202','IFRS-nGAAP_2958;r203','IFRS-nGAAP_2966;r204','IFRS-nGAAP_2974;r205','IFRS-nGAAP_2982;r206','IFRS-nGAAP_2982;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2719;r051','IFRS-nGAAP_2727;r052','IFRS-nGAAP_2735;r053','IFRS-nGAAP_2743;r054','IFRS-nGAAP_2751;r055','IFRS-nGAAP_2791;r070','IFRS-nGAAP_2831;r121','IFRS-nGAAP_2839;r122','IFRS-nGAAP_2847;r123','IFRS-nGAAP_2855;r124','IFRS-nGAAP_2863;r125','IFRS-nGAAP_2871;r126','IFRS-nGAAP_2879;r127','IFRS-nGAAP_2887;r128','IFRS-nGAAP_2943;r201','IFRS-nGAAP_2951;r202','IFRS-nGAAP_2959;r203','IFRS-nGAAP_2967;r204','IFRS-nGAAP_2975;r205','IFRS-nGAAP_2983;r206','IFRS-nGAAP_2983;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c030] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2720;r051','IFRS-nGAAP_2728;r052','IFRS-nGAAP_2736;r053','IFRS-nGAAP_2744;r054','IFRS-nGAAP_2752;r055','IFRS-nGAAP_2792;r070','IFRS-nGAAP_2832;r121','IFRS-nGAAP_2840;r122','IFRS-nGAAP_2848;r123','IFRS-nGAAP_2856;r124','IFRS-nGAAP_2864;r125','IFRS-nGAAP_2872;r126','IFRS-nGAAP_2880;r127','IFRS-nGAAP_2888;r128','IFRS-nGAAP_2944;r201','IFRS-nGAAP_2952;r202','IFRS-nGAAP_2960;r203','IFRS-nGAAP_2968;r204','IFRS-nGAAP_2976;r205','IFRS-nGAAP_2984;r206','IFRS-nGAAP_2984;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c040] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2721;r051','IFRS-nGAAP_2729;r052','IFRS-nGAAP_2737;r053','IFRS-nGAAP_2745;r054','IFRS-nGAAP_2753;r055','IFRS-nGAAP_2793;r070','IFRS-nGAAP_2833;r121','IFRS-nGAAP_2841;r122','IFRS-nGAAP_2849;r123','IFRS-nGAAP_2857;r124','IFRS-nGAAP_2865;r125','IFRS-nGAAP_2873;r126','IFRS-nGAAP_2881;r127','IFRS-nGAAP_2889;r128','IFRS-nGAAP_2945;r201','IFRS-nGAAP_2953;r202','IFRS-nGAAP_2961;r203','IFRS-nGAAP_2969;r204','IFRS-nGAAP_2977;r205','IFRS-nGAAP_2985;r206','IFRS-nGAAP_2985;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c050] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2722;r051','IFRS-nGAAP_2730;r052','IFRS-nGAAP_2738;r053','IFRS-nGAAP_2746;r054','IFRS-nGAAP_2754;r055','IFRS-nGAAP_2794;r070','IFRS-nGAAP_2834;r121','IFRS-nGAAP_2842;r122','IFRS-nGAAP_2850;r123','IFRS-nGAAP_2858;r124','IFRS-nGAAP_2866;r125','IFRS-nGAAP_2874;r126','IFRS-nGAAP_2882;r127','IFRS-nGAAP_2890;r128','IFRS-nGAAP_2946;r201','IFRS-nGAAP_2954;r202','IFRS-nGAAP_2962;r203','IFRS-nGAAP_2970;r204','IFRS-nGAAP_2978;r205','IFRS-nGAAP_2986;r206','IFRS-nGAAP_2986;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c060] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2723;r051','IFRS-nGAAP_2731;r052','IFRS-nGAAP_2739;r053','IFRS-nGAAP_2747;r054','IFRS-nGAAP_2755;r055','IFRS-nGAAP_2795;r070','IFRS-nGAAP_2835;r121','IFRS-nGAAP_2843;r122','IFRS-nGAAP_2851;r123','IFRS-nGAAP_2859;r124','IFRS-nGAAP_2867;r125','IFRS-nGAAP_2875;r126','IFRS-nGAAP_2883;r127','IFRS-nGAAP_2891;r128','IFRS-nGAAP_2947;r201','IFRS-nGAAP_2955;r202','IFRS-nGAAP_2963;r203','IFRS-nGAAP_2971;r204','IFRS-nGAAP_2979;r205','IFRS-nGAAP_2987;r206','IFRS-nGAAP_2987;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c070] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_2724;r051','IFRS-nGAAP_2732;r052','IFRS-nGAAP_2740;r053','IFRS-nGAAP_2748;r054','IFRS-nGAAP_2756;r055','IFRS-nGAAP_2796;r070','IFRS-nGAAP_2836;r121','IFRS-nGAAP_2844;r122','IFRS-nGAAP_2852;r123','IFRS-nGAAP_2860;r124','IFRS-nGAAP_2868;r125','IFRS-nGAAP_2876;r126','IFRS-nGAAP_2884;r127','IFRS-nGAAP_2892;r128','IFRS-nGAAP_2948;r201','IFRS-nGAAP_2956;r202','IFRS-nGAAP_2964;r203','IFRS-nGAAP_2972;r204','IFRS-nGAAP_2980;r205','IFRS-nGAAP_2988;r206','IFRS-nGAAP_2988;r206')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_14![$substr(row,(IndexOf(row,';')+2),10)$,c080] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3033;r041','IFRS-nGAAP_3041;r042','IFRS-nGAAP_3049;r043','IFRS-nGAAP_3057;r044','IFRS-nGAAP_3112;r060','IFRS-nGAAP_3170;r121','IFRS-nGAAP_3178;r122','IFRS-nGAAP_3186;r123','IFRS-nGAAP_3194;r124','IFRS-nGAAP_3202;r125','IFRS-nGAAP_3210;r126','IFRS-nGAAP_3218;r127','IFRS-nGAAP_3226;r128','IFRS-nGAAP_3267;r181','IFRS-nGAAP_3275;r182','IFRS-nGAAP_3283;r183','IFRS-nGAAP_3291;r184','IFRS-nGAAP_3299;r185','IFRS-nGAAP_3307;r186','IFRS-nGAAP_3315;r187','IFRS-nGAAP_3326;r200','IFRS-nGAAP_3326;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3034;r041','IFRS-nGAAP_3042;r042','IFRS-nGAAP_3050;r043','IFRS-nGAAP_3058;r044','IFRS-nGAAP_3113;r060','IFRS-nGAAP_3171;r121','IFRS-nGAAP_3179;r122','IFRS-nGAAP_3187;r123','IFRS-nGAAP_3195;r124','IFRS-nGAAP_3203;r125','IFRS-nGAAP_3211;r126','IFRS-nGAAP_3219;r127','IFRS-nGAAP_3227;r128','IFRS-nGAAP_3268;r181','IFRS-nGAAP_3276;r182','IFRS-nGAAP_3284;r183','IFRS-nGAAP_3292;r184','IFRS-nGAAP_3300;r185','IFRS-nGAAP_3308;r186','IFRS-nGAAP_3316;r187','IFRS-nGAAP_3327;r200','IFRS-nGAAP_3327;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3035;r041','IFRS-nGAAP_3043;r042','IFRS-nGAAP_3051;r043','IFRS-nGAAP_3059;r044','IFRS-nGAAP_3114;r060','IFRS-nGAAP_3172;r121','IFRS-nGAAP_3180;r122','IFRS-nGAAP_3188;r123','IFRS-nGAAP_3196;r124','IFRS-nGAAP_3204;r125','IFRS-nGAAP_3212;r126','IFRS-nGAAP_3220;r127','IFRS-nGAAP_3228;r128','IFRS-nGAAP_3269;r181','IFRS-nGAAP_3277;r182','IFRS-nGAAP_3285;r183','IFRS-nGAAP_3293;r184','IFRS-nGAAP_3301;r185','IFRS-nGAAP_3309;r186','IFRS-nGAAP_3317;r187','IFRS-nGAAP_3328;r200','IFRS-nGAAP_3328;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c030] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3036;r041','IFRS-nGAAP_3044;r042','IFRS-nGAAP_3052;r043','IFRS-nGAAP_3060;r044','IFRS-nGAAP_3115;r060','IFRS-nGAAP_3173;r121','IFRS-nGAAP_3181;r122','IFRS-nGAAP_3189;r123','IFRS-nGAAP_3197;r124','IFRS-nGAAP_3205;r125','IFRS-nGAAP_3213;r126','IFRS-nGAAP_3221;r127','IFRS-nGAAP_3229;r128','IFRS-nGAAP_3270;r181','IFRS-nGAAP_3278;r182','IFRS-nGAAP_3286;r183','IFRS-nGAAP_3294;r184','IFRS-nGAAP_3302;r185','IFRS-nGAAP_3310;r186','IFRS-nGAAP_3318;r187','IFRS-nGAAP_3329;r200','IFRS-nGAAP_3329;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c040] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3037;r041','IFRS-nGAAP_3045;r042','IFRS-nGAAP_3053;r043','IFRS-nGAAP_3061;r044','IFRS-nGAAP_3116;r060','IFRS-nGAAP_3174;r121','IFRS-nGAAP_3182;r122','IFRS-nGAAP_3190;r123','IFRS-nGAAP_3198;r124','IFRS-nGAAP_3206;r125','IFRS-nGAAP_3214;r126','IFRS-nGAAP_3222;r127','IFRS-nGAAP_3230;r128','IFRS-nGAAP_3271;r181','IFRS-nGAAP_3279;r182','IFRS-nGAAP_3287;r183','IFRS-nGAAP_3295;r184','IFRS-nGAAP_3303;r185','IFRS-nGAAP_3311;r186','IFRS-nGAAP_3319;r187','IFRS-nGAAP_3330;r200','IFRS-nGAAP_3330;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c050] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3038;r041','IFRS-nGAAP_3046;r042','IFRS-nGAAP_3054;r043','IFRS-nGAAP_3062;r044','IFRS-nGAAP_3117;r060','IFRS-nGAAP_3175;r121','IFRS-nGAAP_3183;r122','IFRS-nGAAP_3191;r123','IFRS-nGAAP_3199;r124','IFRS-nGAAP_3207;r125','IFRS-nGAAP_3215;r126','IFRS-nGAAP_3223;r127','IFRS-nGAAP_3231;r128','IFRS-nGAAP_3272;r181','IFRS-nGAAP_3280;r182','IFRS-nGAAP_3288;r183','IFRS-nGAAP_3296;r184','IFRS-nGAAP_3304;r185','IFRS-nGAAP_3312;r186','IFRS-nGAAP_3320;r187','IFRS-nGAAP_3331;r200','IFRS-nGAAP_3331;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c060] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3039;r041','IFRS-nGAAP_3047;r042','IFRS-nGAAP_3055;r043','IFRS-nGAAP_3063;r044','IFRS-nGAAP_3118;r060','IFRS-nGAAP_3176;r121','IFRS-nGAAP_3184;r122','IFRS-nGAAP_3192;r123','IFRS-nGAAP_3200;r124','IFRS-nGAAP_3208;r125','IFRS-nGAAP_3216;r126','IFRS-nGAAP_3224;r127','IFRS-nGAAP_3232;r128','IFRS-nGAAP_3273;r181','IFRS-nGAAP_3281;r182','IFRS-nGAAP_3289;r183','IFRS-nGAAP_3297;r184','IFRS-nGAAP_3305;r185','IFRS-nGAAP_3313;r186','IFRS-nGAAP_3321;r187','IFRS-nGAAP_3332;r200','IFRS-nGAAP_3332;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c100] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3040;r041','IFRS-nGAAP_3048;r042','IFRS-nGAAP_3056;r043','IFRS-nGAAP_3064;r044','IFRS-nGAAP_3119;r060','IFRS-nGAAP_3177;r121','IFRS-nGAAP_3185;r122','IFRS-nGAAP_3193;r123','IFRS-nGAAP_3201;r124','IFRS-nGAAP_3209;r125','IFRS-nGAAP_3217;r126','IFRS-nGAAP_3225;r127','IFRS-nGAAP_3233;r128','IFRS-nGAAP_3274;r181','IFRS-nGAAP_3282;r182','IFRS-nGAAP_3290;r183','IFRS-nGAAP_3298;r184','IFRS-nGAAP_3306;r185','IFRS-nGAAP_3314;r186','IFRS-nGAAP_3322;r187','IFRS-nGAAP_3333;r200','IFRS-nGAAP_3333;r200')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_15![$substr(row,(IndexOf(row,';')+2),10)$,c110] = 0 " />
+</forEach>
+
+<forEach name="col" values="values('IFRS-nGAAP_3334;c010','IFRS-nGAAP_3334;c010')">
+	<rule id="$substr(col,1,IndexOf(col,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'"
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_16.ft_16_2![$substr(col,(IndexOf(col,';')+2),10)$,r010] = 0 " />
+</forEach>
+<forEach name="row" values="values('IFRS-nGAAP_3346;r100','IFRS-nGAAP_3347;r110','IFRS-nGAAP_3348;r120','IFRS-nGAAP_3349;r130','IFRS-nGAAP_3350;r140','IFRS-nGAAP_3351;r150','IFRS-nGAAP_3352;r160','IFRS-nGAAP_3353;r170','IFRS-nGAAP_3354;r180','IFRS-nGAAP_3354;r180')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_16.ft_16_3![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3361;r080','IFRS-nGAAP_3362;r090','IFRS-nGAAP_3363;r100','IFRS-nGAAP_3364;r110','IFRS-nGAAP_3365;r120','IFRS-nGAAP_3366;r130','IFRS-nGAAP_3367;r140','IFRS-nGAAP_3367;r140')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_16.ft_16_4![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3373;r010','IFRS-nGAAP_3379;r080','IFRS-nGAAP_3381;r090','IFRS-nGAAP_3383;r100','IFRS-nGAAP_3385;r110','IFRS-nGAAP_3387;r120','IFRS-nGAAP_3389;r130','IFRS-nGAAP_3391;r140','IFRS-nGAAP_3391;r140')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_16.ft_16_5![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3374;r010','IFRS-nGAAP_3380;r080','IFRS-nGAAP_3382;r090','IFRS-nGAAP_3384;r100','IFRS-nGAAP_3386;r110','IFRS-nGAAP_3388;r120','IFRS-nGAAP_3390;r130','IFRS-nGAAP_3392;r140','IFRS-nGAAP_3392;r140')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_16.ft_16_5![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3398;r091','IFRS-nGAAP_3399;r092','IFRS-nGAAP_3400;r093','IFRS-nGAAP_3401;r094','IFRS-nGAAP_3402;r095','IFRS-nGAAP_3407;r110','IFRS-nGAAP_3412;r171','IFRS-nGAAP_3413;r172','IFRS-nGAAP_3414;r173','IFRS-nGAAP_3415;r174','IFRS-nGAAP_3416;r175','IFRS-nGAAP_3417;r176','IFRS-nGAAP_3418;r177','IFRS-nGAAP_3419;r178','IFRS-nGAAP_3423;r231','IFRS-nGAAP_3424;r232','IFRS-nGAAP_3425;r233','IFRS-nGAAP_3426;r234','IFRS-nGAAP_3427;r235','IFRS-nGAAP_3428;r236','IFRS-nGAAP_3429;r237','IFRS-nGAAP_3431;r365','IFRS-nGAAP_3432;r380','IFRS-nGAAP_3432;r380')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_17.ft_17_1![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3439;r061','IFRS-nGAAP_3440;r062','IFRS-nGAAP_3441;r063','IFRS-nGAAP_3442;r064','IFRS-nGAAP_3443;r065','IFRS-nGAAP_3444;r066','IFRS-nGAAP_3449;r141','IFRS-nGAAP_3450;r142','IFRS-nGAAP_3451;r143','IFRS-nGAAP_3452;r144','IFRS-nGAAP_3455;r245','IFRS-nGAAP_3456;r325','IFRS-nGAAP_3457;r335','IFRS-nGAAP_3457;r335')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_1.ft_17.ft_17_3![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3468;r091','IFRS-nGAAP_3470;r092','IFRS-nGAAP_3472;r093','IFRS-nGAAP_3474;r094','IFRS-nGAAP_3476;r095','IFRS-nGAAP_3486;r110','IFRS-nGAAP_3496;r171','IFRS-nGAAP_3498;r172','IFRS-nGAAP_3500;r173','IFRS-nGAAP_3502;r174','IFRS-nGAAP_3504;r175','IFRS-nGAAP_3506;r176','IFRS-nGAAP_3508;r177','IFRS-nGAAP_3510;r178','IFRS-nGAAP_3518;r231','IFRS-nGAAP_3520;r232','IFRS-nGAAP_3522;r233','IFRS-nGAAP_3524;r234','IFRS-nGAAP_3526;r235','IFRS-nGAAP_3528;r236','IFRS-nGAAP_3530;r237','IFRS-nGAAP_3534;r315','IFRS-nGAAP_3536;r330','IFRS-nGAAP_3536;r330')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_2.ft_20.ft_20_1![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3469;r091','IFRS-nGAAP_3471;r092','IFRS-nGAAP_3473;r093','IFRS-nGAAP_3475;r094','IFRS-nGAAP_3477;r095','IFRS-nGAAP_3487;r110','IFRS-nGAAP_3497;r171','IFRS-nGAAP_3499;r172','IFRS-nGAAP_3501;r173','IFRS-nGAAP_3503;r174','IFRS-nGAAP_3505;r175','IFRS-nGAAP_3507;r176','IFRS-nGAAP_3509;r177','IFRS-nGAAP_3511;r178','IFRS-nGAAP_3519;r231','IFRS-nGAAP_3521;r232','IFRS-nGAAP_3523;r233','IFRS-nGAAP_3525;r234','IFRS-nGAAP_3527;r235','IFRS-nGAAP_3529;r236','IFRS-nGAAP_3531;r237','IFRS-nGAAP_3535;r315','IFRS-nGAAP_3537;r330','IFRS-nGAAP_3537;r330')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_2.ft_20.ft_20_1![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3550;r061','IFRS-nGAAP_3552;r062','IFRS-nGAAP_3554;r063','IFRS-nGAAP_3556;r064','IFRS-nGAAP_3558;r065','IFRS-nGAAP_3560;r066','IFRS-nGAAP_3570;r141','IFRS-nGAAP_3572;r142','IFRS-nGAAP_3574;r143','IFRS-nGAAP_3576;r144','IFRS-nGAAP_3582;r215','IFRS-nGAAP_3582;r215')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_2.ft_20.ft_20_2![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3551;r061','IFRS-nGAAP_3553;r062','IFRS-nGAAP_3555;r063','IFRS-nGAAP_3557;r064','IFRS-nGAAP_3559;r065','IFRS-nGAAP_3561;r066','IFRS-nGAAP_3571;r141','IFRS-nGAAP_3573;r142','IFRS-nGAAP_3575;r143','IFRS-nGAAP_3577;r144','IFRS-nGAAP_3583;r215','IFRS-nGAAP_3583;r215')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_2.ft_20.ft_20_2![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3590;r085','IFRS-nGAAP_3592;r095','IFRS-nGAAP_3594;r120','IFRS-nGAAP_3598;r175','IFRS-nGAAP_3602;r275','IFRS-nGAAP_3602;r275')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_2.ft_20.ft_20_3![$substr(row,(IndexOf(row,';')+2),10)$,c010] = 0 " />
+</forEach>
+
+<forEach name="row" values="values('IFRS-nGAAP_3591;r085','IFRS-nGAAP_3593;r095','IFRS-nGAAP_3595;r120','IFRS-nGAAP_3599;r175','IFRS-nGAAP_3603;r275','IFRS-nGAAP_3603;r275')">
+	<rule id="$substr(row,1,IndexOf(row,';'))$"
+	checkWhen="getSQLValue('select FI_COUNTRY_CODE from FINANCIAL_INST where F001 = ''$f001$''') = '003'  and getBankInfo('FI_ACCOUNTING')=2 " 
+	formula="FinRep_IFRS_nGAAP.subconsolidated_reporting_SC.part_2.ft_20.ft_20_3![$substr(row,(IndexOf(row,';')+2),10)$,c020] = 0 " />
+</forEach>
+
