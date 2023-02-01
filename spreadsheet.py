@@ -12,3 +12,8 @@ for row in csvreader:
     rows.append(row)
 
 f.close()
+
+answear: str=input("Enter command:")
+
+while answear != 'exit':
+
