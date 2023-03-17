@@ -1,0 +1,551 @@
+{
+    "version": 1,
+    "customer": {
+        "authorizedAt": null,
+        "createdAt": "2023-03-16 10:41:42",
+        "zip": "77855",
+        "city": "Achern",
+        "street": "Acherner Weg",
+        "houseNumber": "1",
+        "country": "DE",
+        "countryName": "Deutschland",
+        "business": "0",
+        "unknown": "0",
+        "company": "",
+        "countryId": "48",
+        "customerId": "523",
+        "status": "active",
+        "externalId": null,
+        "salutation": "1",
+        "firstname": "DORU",
+        "title": null,
+        "surname": "BILL_8070_water",
+        "dateOfBirth": "1990-01-01",
+        "availableSentNotification": "1",
+        "authEnabled": "0",
+        "accountUsername": null,
+        "accountUseremail": null,
+        "phoneMobileAreaCode": null,
+        "phoneMobile": null,
+        "phoneHomeAreaCode": null,
+        "phoneHome": null,
+        "phoneBusinessAreaCode": null,
+        "phoneBusiness": null,
+        "emailPrivate": "test@powercloud.de",
+        "emailBusiness": null,
+        "adsMail": null,
+        "adsPhone": null,
+        "adsPost": null,
+        "customerCommunicationType": "0",
+        "extendedData": {
+            "categories": {},
+            "values": {}
+        },
+        "customerGroups": [],
+        "customer_insolvencies": []
+    },
+    "invoice": {
+        "externalInvoice": 0,
+        "invoiceTriggeredByUser": true,
+        "invoiceNumber": 73,
+        "bundleInvoiceId": null,
+        "invoiceDate": "2023-03-16",
+        "payableAt": "2023-03-30",
+        "accountVoucherId": 603,
+        "billingAddress": {
+            "company": "",
+            "salutation": 1,
+            "firstName": "DORU",
+            "surName": "BILL_8070_water",
+            "street": "Acherner Weg",
+            "houseNumber": "1",
+            "zip": "77855",
+            "city": "Achern",
+            "country": 48
+        },
+        "bankingData": {
+            "id": "1020",
+            "iban": "DE02500105170137075030",
+            "bic": "INGDDEFFXXX",
+            "bank": "ING-DIBA AG (RETAIL BANKING)",
+            "activeFrom": "2021-01-16",
+            "activeUntil": null,
+            "sepaMandate": "PC-523-584-1",
+            "accountHolder": "DORU BILL_8070_water",
+            "direction": "in",
+            "directDebit": "1",
+            "createdAt": "2021-01-16 10:41:42"
+        },
+        "totalCosts": {
+            "net": 60.62,
+            "tax": 4.24,
+            "gross": 64.86
+        },
+        "invoiceAmount": {
+            "net": 60.62,
+            "tax": 4.24,
+            "gross": 64.86
+        },
+        "amountRemaining": {
+            "net": 60.62,
+            "tax": 4.24,
+            "gross": 64.86
+        },
+        "totalAmountRemaining": {
+            "net": 60.62,
+            "tax": 4.24,
+            "gross": 64.86
+        },
+        "accountBalance": {
+            "amountOld": 0,
+            "amountNew": 64.86
+        },
+        "invoiceTotalAmountDaily": {
+            "net": 0.17,
+            "gross": 0.18,
+            "tax": 0.01
+        }
+    },
+    "contracts": [
+        {
+            "contract": {
+                "id": "584",
+                "accountId": "626",
+                "externalContractId": null,
+                "bundleContractId": null,
+                "authorizedAt": null,
+                "type": "water_sewage",
+                "energy": "water",
+                "isFlatrate": false,
+                "billing_alternativeAddress": false,
+                "relocationPossible": true,
+                "relocationContractId": null,
+                "relatedContractType": null,
+                "relatedContractId": null,
+                "relocationAt": null,
+                "business": false,
+                "company": "",
+                "countryId": "DE",
+                "zip": "77855",
+                "city": "Achern",
+                "street": "Acherner Weg",
+                "houseNumber": "1",
+                "floor": "1",
+                "phone": "",
+                "fax": "",
+                "email": "",
+                "cancelledBy": null,
+                "cancellationReason": null,
+                "cancellationTriggeredDate": null,
+                "billing_salutation": "1",
+                "billing_title": "",
+                "billing_firstname": "DORU",
+                "billing_surname": "BILL_8070_water",
+                "billing_careOfRecipient": "",
+                "billing_company": "",
+                "billing_zip": "77855",
+                "billing_city": "Achern",
+                "billing_street": "Acherner Weg",
+                "billing_houseNumber": "1",
+                "billing_phone": "",
+                "billing_email": "test@powercloud.de",
+                "billing_country": "Deutschland",
+                "billing_countryAlpha2": "DE",
+                "counterNumber": "4",
+                "counterType": "water",
+                "counterTypeName": "Wasserz\u00e4hler",
+                "meterPointIdentifier": "1314441414",
+                "marketLocation": null,
+                "meterLocation": null,
+                "complexSystem": false,
+                "customerId": "523",
+                "externalCustomerNumber": null,
+                "customerCommunicationType": "0",
+                "salutation": "1",
+                "firstname": "DORU",
+                "surname": "BILL_8070_water",
+                "dateOfBirth": null,
+                "status": "active",
+                "statusCode": "5000",
+                "statusCodeTitle": "In Belieferung",
+                "revocation": false,
+                "dateOfRevocation": null,
+                "lastRevocationDate": "2021-01-15",
+                "startDate": "2021-01-01",
+                "desiredStartDate": null,
+                "simulationTurnus": 6,
+                "nextInvoiceInformationDate": "2023-06-30",
+                "endDate": null,
+                "desiredEndDate": null,
+                "orderId": "489",
+                "nextPossibleCancellationByLfa": null,
+                "customerSpecification": "relocation_at",
+                "signatureDate": null,
+                "cancelledAt": null,
+                "filingDateCancellation": null,
+                "cancellationTechKey": null,
+                "netDeliveryStartConfirmed": "2021-01-01 00:00:00",
+                "netDeliveryEndConfirmed": null,
+                "usage": "99",
+                "usageNet": null,
+                "usagePrevious": null,
+                "brandId": null,
+                "directDebit": true,
+                "iban": "DE02500105170137075030",
+                "bic": "INGDDEFFXXX",
+                "bank": "ING-DIBA AG (RETAIL BANKING)",
+                "paymentProvider": "SEPA Bank",
+                "paymentProviderData": [],
+                "replacedBankId": 0,
+                "bankAccountNumber": "0137075030",
+                "bankCode": "50010517",
+                "alternativeAccountHolder": "DORU BILL_8070_water",
+                "sepaMandate": "",
+                "futureBankingData": [],
+                "previousProvider": null,
+                "customerNumber": null,
+                "cancellationPreviousProviderSent": null,
+                "cancellationPreviousProviderConfirmed": null,
+                "netDeliveryStartSent": null,
+                "minimumRuntime": "12",
+                "minimumRuntimeUnit": "months",
+                "extensionTime": "12",
+                "extensionTimeUnit": "months",
+                "cancellationPeriod": "60",
+                "cancellationPeriodUnit": "days",
+                "nextCancellationDate": null,
+                "latestCancelationByCustomer": null,
+                "externalId": null,
+                "externalOrderId": null,
+                "extendedData": {
+                    "categories": {},
+                    "values": {}
+                },
+                "desiredInvoiceDate": "2022-12-31",
+                "invoicePeriodStartDate": "2022-01-01",
+                "invoicePeriodEndDate": "2022-12-31",
+                "dunningLocked": false,
+                "dunningLockedUntil": null,
+                "dunningLockReason": "",
+                "paymentLockedOut": false,
+                "paymentLockedOutUntil": "",
+                "paymentLockedIn": false,
+                "paymentLockedInUntil": "",
+                "taxRate": null,
+                "taxRateReason": null,
+                "taxRatePermission": null,
+                "energyTaxExemptionRate": null,
+                "energyTaxExemptionReason": null,
+                "energyTaxExemptionPermission": null,
+                "legalCase": null,
+                "desiredInvoiceReason": null,
+                "dunningProcedure": "-",
+                "meterPricing": "included",
+                "additionalValues": []
+            },
+            "contractInvoice": {
+                "startDate": "2021-01-01",
+                "endDate": "2021-12-31",
+                "totalCosts": {
+                    "net": 60.62,
+                    "tax": 4.24,
+                    "gross": 64.86
+                },
+                "invoiceAmount": {
+                    "net": 60.62,
+                    "tax": 4.24,
+                    "gross": 64.86
+                },
+                "amountRemaining": {
+                    "net": 60.62,
+                    "tax": 4.24,
+                    "gross": 64.86
+                },
+                "totalAmountRemaining": {
+                    "net": 60.62,
+                    "tax": 4.24,
+                    "gross": 64.86
+                },
+                "invoiceTotalAmountDaily": {
+                    "net": 0.17,
+                    "gross": 0.18,
+                    "tax": 0.01
+                },
+                "correctedInvoicesIncluded": 0,
+                "invoiceCorrection": 0,
+                "energyCosts": {
+                    "type": "cost",
+                    "compensatedSummation": false,
+                    "decimalPlaces": 2,
+                    "decimalPlacesForQuantity": 2,
+                    "calculationRelevant": true,
+                    "taxRate": 7,
+                    "taxKey": "M7",
+                    "taxType": "vat_reduced",
+                    "amountNet": 60.62,
+                    "amountTax": 4.24,
+                    "amountGross": 64.86,
+                    "amountCompensated": 0,
+                    "additionalData": null,
+                    "taxPeriods": [
+                        {
+                            "startDate": "2021-01-01",
+                            "endDate": "2021-12-31",
+                            "type": "cost",
+                            "compensatedSummation": true,
+                            "decimalPlaces": 2,
+                            "calculationRelevant": true,
+                            "taxRate": 7,
+                            "taxKey": "M7",
+                            "taxType": "vat_reduced",
+                            "amountNet": 60.62,
+                            "amountTax": 4.24,
+                            "amountGross": 64.86,
+                            "amountCompensated": 0
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "title": "BILLX Water",
+                            "startDate": "2021-01-01",
+                            "endDate": "2021-12-31",
+                            "days": 365,
+                            "basePrice": {
+                                "quantity": 365,
+                                "quantityUnit": "days",
+                                "unitPriceNet": "14.0187",
+                                "unitPriceGross": 15,
+                                "unitPriceFactor": 365,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced",
+                                "type": "base_price",
+                                "amountNet": 14.02,
+                                "amountTax": 0.98,
+                                "amountGross": 15,
+                                "amountCompensated": 0
+                            },
+                            "workingPriceTotal": {
+                                "quantity": 99.73,
+                                "quantityUnit": "cbm",
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced",
+                                "amountNet": 46.6,
+                                "amountTax": 3.26,
+                                "amountGross": 49.86,
+                                "energyTaxNet": 0,
+                                "energyTaxTax": 0,
+                                "energyTaxGross": 0,
+                                "amountWithoutEnergyTaxNet": 0,
+                                "amountWithoutEnergyTaxTax": 0,
+                                "amountWithoutEnergyTaxGross": 0,
+                                "workingPrices": [
+                                    {
+                                        "obis": "8-1:1.1.1",
+                                        "description": "WATER",
+                                        "quantity": 99.727,
+                                        "quantityUnit": "cbm",
+                                        "unitPriceNet": "0.46729",
+                                        "unitPriceGross": 0.5,
+                                        "unitPriceFactor": 1,
+                                        "taxRate": 7,
+                                        "taxKey": "M7",
+                                        "taxType": "vat_reduced",
+                                        "type": "working_price",
+                                        "amountNet": 46.6,
+                                        "amountTax": 3.26,
+                                        "amountGross": 49.86,
+                                        "amountCompensated": 0
+                                    }
+                                ]
+                            },
+                            "workingPriceTotalSewage": {
+                                "workingPrices": []
+                            }
+                        }
+                    ]
+                },
+                "energyData": {
+                    "type": "turnus",
+                    "readings": {
+                        "periodsHaveExchangeFactor": false,
+                        "usage": 99.727,
+                        "periods": [
+                            {
+                                "startDate": "2021-01-01",
+                                "endDate": "2021-12-31",
+                                "days": 365,
+                                "usage": 99.727,
+                                "usageUnit": "",
+                                "counterNumber": "4",
+                                "counterType": "water",
+                                "counterTypeName": "Wasserz\u00e4hler",
+                                "startReadingOrigin": "customer",
+                                "startReadingQualifier": "read",
+                                "startReadingChannel": "CUSTOMERPORTAL",
+                                "endReadingOrigin": "customer",
+                                "endReadingQualifier": "read",
+                                "endReadingChannel": "CUSTOMERPORTAL",
+                                "gasCalorificValue": "",
+                                "gasCondition": "",
+                                "registers": [
+                                    {
+                                        "obis": "8-1:1.1.1",
+                                        "billingRegisterType": null,
+                                        "description": null,
+                                        "exchangeFactor": 1,
+                                        "usage": 99.727,
+                                        "usageUnit": "",
+                                        "usageWithoutCorrection": 99.727,
+                                        "usageCorrected": 0,
+                                        "externalId": null,
+                                        "startCounterValues": 0,
+                                        "endCounterValues": 99.727,
+                                        "usageMetered": 99.73,
+                                        "relations": [
+                                            {
+                                                "rel": "counter",
+                                                "entityType": "counter",
+                                                "id": 491,
+                                                "counterNumber": "4",
+                                                "jsonPath": "$..contract_counters[?(@.id==491)]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "futureDeposits": {
+                        "taxType": "vat_reduced",
+                        "deposits": [
+                            {
+                                "dueDate": "2023-03-23",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-03-24",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-03-27",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-03-28",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-03-29",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-03-30",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-03-31",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-04-03",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-04-04",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-04-05",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-04-06",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            },
+                            {
+                                "dueDate": "2023-04-11",
+                                "isAccounted": false,
+                                "amountNet": 5.61,
+                                "amountTax": 0.39,
+                                "amountGross": 6,
+                                "taxRate": 7,
+                                "taxKey": "M7",
+                                "taxType": "vat_reduced"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "pacsNneData": [],
+    "pacsPriceTimeSeries": []
+}
