@@ -23,8 +23,7 @@ def df_countries():
     Energy.drop(columns=['Unnamed: 0', 'Unnamed: 1'], inplace=True)
     Energy.rename(columns={'Unnamed: 2': 'Country', 'Unnamed: 3': 'Energy Supply','Unnamed: 4': 'Energy Supply per Capita','Unnamed: 5': '% Renewable'}, inplace=True)
 
-    Energy.replace(to_replace={'United Kingdom of Great Britain and Northern Ireland': 'United Kingdom','Republic of Korea': "South Korea", "United States of America": "United States"},
-                   inplace=True)
+    Energy.replace(to_replace={'United Kingdom of Great Britain and Northern Ireland': 'United Kingdom','Republic of Korea': "South Korea", "United States of America": "United States"},inplace=True)
 
     Energy.reset_index(inplace=True)
     Energy.drop(columns='index', inplace=True)
@@ -60,4 +59,14 @@ def df_countries():
     return df
 
 print(df_countries().columns)
+
+
+def top_15_countries():
+    """ This function returns a Series named avgGDP with 15 countries and their average GDP sorted in descending order """
+    rows = ['2006', '2007', '2008','2009', '2010', '2011', '2012', '2013', '2014', '2015']
+    Top15=df_countries().loc[:,[str(i) for i in range(2006,2016)]]
+    Top15["avgGDP"] = np.mean(Top15,axis=1)
+    return Top15.sort_values("avgGDP",ascending=False)["avgGDP"]
+
+print(top_15_countries())
 
