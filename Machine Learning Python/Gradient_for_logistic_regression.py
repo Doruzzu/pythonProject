@@ -96,8 +96,8 @@ def predict(X, w, b):
     m, n = X.shape
     p = np.zeros(m)
 
-    ### START CODE HERE ###
-    # Loop over each example
+
+
     for i in range(m):
         z_wb = 0
         # Loop over each feature
@@ -105,7 +105,7 @@ def predict(X, w, b):
             # Add the corresponding term to z_wb
             z_wb += X[i, j] * w[j]
 
-        # Add bias term
+
         z_wb += b
 
         # Calculate the prediction for this example
@@ -139,19 +139,17 @@ def compute_cost_reg(X, y, w, b, lambda_=1):
     # You need to calculate this value
     reg_cost = 0.
 
-    ### START CODE HERE ###
+
     for j in range(n):
         reg_cost_j = w[j] ** 2
         reg_cost = reg_cost + reg_cost_j
 
     reg_cost = (lambda_ / (2 * m)) * reg_cost
-    ### END CODE HERE ###
 
     # Add the regularization cost to get the total cost
     total_cost = cost_without_reg + reg_cost
 
     return total_cost
-
 
 def compute_gradient_reg(X, y, w, b, lambda_=1):
     """
