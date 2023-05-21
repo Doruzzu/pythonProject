@@ -17,3 +17,13 @@ def eval_cat_err(y, yhat):
     cerr = incorrect / m
 
     return (cerr)
+
+
+model_r = Sequential(
+    [
+     Dense(120,activation='relu',kernel_regularizer=tf.keras.regularizers.l2(0.1)),
+     Dense(40,activation='relu',kernel_regularizer=tf.keras.regularizers.l2(0.1)),
+     Dense(6,activation='linear')
+    ], name= None
+)
+model_r.compile(loss=SparseCategoricalCrossentropy(from_logits=True), optimizer=tf.keras.optimizers.Adam(learning_rate=0.01))
