@@ -31,7 +31,7 @@ def initialize_parameters(n_x, n_h, n_y):
                     W2 -- weight matrix of shape (n_y, n_h)
                     b2 -- bias vector of shape (n_y, 1)
     """
-    # (≈ 4 lines of code)
+
 
     W1 = np.random.randn(n_h, n_x) * 0.01
     W2 = np.random.randn(n_y, n_h) * 0.01
@@ -49,8 +49,6 @@ def initialize_parameters(n_x, n_h, n_y):
 
 def compute_cost(A2, Y):
     """
-    Computes the cross-entropy cost given in equation (13)
-
     Arguments:
     A2 -- The sigmoid output of the second activation, of shape (1, number of examples)
     Y -- "true" labels vector of shape (1, number of examples)
@@ -66,10 +64,10 @@ def compute_cost(A2, Y):
 
     logprobs = np.multiply(np.log(A2), Y) + (1 - Y) * np.log(1 - A2)
     cost = -np.sum(logprobs) / m
-    # YOUR CODE ENDS HERE
+
 
     cost = float(np.squeeze(cost))  # makes sure cost is the dimension we expect.
-    # E.g., turns [[17]] into 17
+    #  turns [[17]] into 17
 
     return cost
 
