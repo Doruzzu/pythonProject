@@ -192,3 +192,48 @@ def update_parameters(parameters, grads, learning_rate=1.2):
                   "b2": b2}
 
     return parameters
+
+
+def nn_model(X, Y, n_h, num_iterations=10, learning_rate=1.2, print_cost=False):
+    """
+    Arguments:
+    X -- dataset of shape (n_x, number of examples)
+    Y -- labels of shape (n_y, number of examples)
+    num_iterations -- number of iterations in the loop
+    learning_rate -- learning rate parameter for gradient descent
+    print_cost -- if True, print the cost every iteration
+
+    Returns:
+    parameters -- parameters learnt by the model. They can then be used to predict.
+    """
+
+    n_x = layer_sizes(X, Y)[0]
+    n_y = layer_sizes(X, Y)[2]
+
+    # Initialize parameters.
+    ### START CODE HERE ### (~ 1 line of code)
+    parameters = initialize_parameters(n_x, n_h, n_y)
+    ### END CODE HERE ###
+
+    # Loop.
+    for i in range(0, num_iterations):
+
+        ### START CODE HERE ### (~ 4 lines of code)
+        # Forward propagation. Inputs: "X, parameters". Outputs: "A2, cache".
+        A2, cache = forward_propagation(X, parameters)
+
+        # Cost function. Inputs: "A2, Y". Outputs: "cost".
+        cost = compute_cost(A2, Y)
+
+        # Backpropagation. Inputs: "parameters, cache, X, Y". Outputs: "grads".
+        grads = backward_propagation(parameters, cache, X, Y)
+
+        # Gradient descent parameter update. Inputs: "parameters, grads, learning_rate". Outputs: "parameters".
+        parameters = update_parameters(parameters, grads, learning_rate)
+        ### END CODE HERE ###
+
+        # Print the cost every iteration.
+        if print_cost:
+            print("Cost after iteration %i: %f" % (i, cost))
+
+    return parameters
