@@ -174,7 +174,7 @@ def update_parameters(parameters, grads, learning_rate=1.2):
     b2 = parameters['b2']
 
     # Retrieve each gradient from the dictionary "grads".
-    ### START CODE HERE ### (~ 4 lines of code)
+
     dW1 = grads['dW1']
     db1 = grads['db1']
     dW2 = grads['dW2']
@@ -211,14 +211,14 @@ def nn_model(X, Y, n_h, num_iterations=10, learning_rate=1.2, print_cost=False):
     n_y = layer_sizes(X, Y)[2]
 
     # Initialize parameters.
-    ### START CODE HERE ### (~ 1 line of code)
+
     parameters = initialize_parameters(n_x, n_h, n_y)
-    ### END CODE HERE ###
+
 
     # Loop.
     for i in range(0, num_iterations):
 
-        ### START CODE HERE ### (~ 4 lines of code)
+
         # Forward propagation. Inputs: "X, parameters". Outputs: "A2, cache".
         A2, cache = forward_propagation(X, parameters)
 
@@ -230,7 +230,7 @@ def nn_model(X, Y, n_h, num_iterations=10, learning_rate=1.2, print_cost=False):
 
         # Gradient descent parameter update. Inputs: "parameters, grads, learning_rate". Outputs: "parameters".
         parameters = update_parameters(parameters, grads, learning_rate)
-        ### END CODE HERE ###
+
 
         # Print the cost every iteration.
         if print_cost:
