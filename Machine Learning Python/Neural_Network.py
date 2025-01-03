@@ -58,3 +58,60 @@ def initialize_parameters(n_x, n_h, n_y):
                   "b2": b2}
 
     return parameters
+
+
+def forward_propagation(X, parameters):
+    """
+    Argument:
+    X -- input data of size (n_x, m)
+    parameters -- python dictionary containing your parameters (output of initialization function)
+
+    Returns:
+    A2 -- the sigmoid output of the second activation
+    cache -- python dictionary containing Z1, A1, Z2, A2
+    (that simplifies the calculations in the back propagation step)
+    """
+    # Retrieve each parameter from the dictionary "parameters".
+
+    W1 = parameters['W1']
+    b1 = parameters['b1']
+    W2 = parameters['W2']
+    b2 = parameters['b2']
+
+    Z1 = W1 @ X + b1
+    A1 = sigmoid(Z1)
+    Z2 = W2 @ A1 + b2
+    A2 = sigmoid(Z2)
+
+    assert (A2.shape == (n_y, X.shape[1]))
+
+    cache = {"Z1": Z1,
+             "A1": A1,
+             "Z2": Z2,
+             "A2": A2}
+
+    return A2, cache
+
+
+def compute_cost(A2, Y):
+    """
+    Computes the cost function as a log loss
+
+    Arguments:
+    A2 -- The output of the neural network of shape (1, number of examples)
+    Y -- "true" labels vector of shape (1, number of examples)
+
+    Returns:
+    cost -- log loss
+
+    """
+    # Number of examples.
+    m = Y.shape[1]
+
+    logloss = -Y * np.log(A2) - (1 - Y) * np.log(1 - A2)
+    cost = (1 / m) * np.sum(logloss)
+
+
+    assert (isinstance(cost, float))
+
+    return cost
