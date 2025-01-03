@@ -40,12 +40,12 @@ def initialize_parameters(n_x, n_h, n_y):
                     b2 -- bias vector of shape (n_y, 1)
     """
 
-    ### START CODE HERE ### (~ 4 lines of code)
+
     W1 = np.random.rand(n_h, n_x) * 0.01
     b1 = np.zeros((n_h, 1))
     W2 = np.random.rand(n_y, n_h) * 0.1
     b2 = np.zeros((n_y, 1))
-    ### END CODE HERE ###
+
 
     assert (W1.shape == (n_h, n_x))
     assert (b1.shape == (n_h, 1))
@@ -237,3 +237,20 @@ def nn_model(X, Y, n_h, num_iterations=10, learning_rate=1.2, print_cost=False):
             print("Cost after iteration %i: %f" % (i, cost))
 
     return parameters
+
+
+def predict(X, parameters):
+    """
+    Using the learned parameters, predicts a class for each example in X
+
+    Arguments:
+    parameters -- python dictionary containing your parameters
+    X -- input data of size (n_x, m)
+
+    Returns
+    predictions -- vector of predictions of our model (blue: 0 / red: 1)
+    """
+    A2, cache = forward_propagation(X, parameters)
+    predictions = sigmoid(A2)
+
+    return predictions
